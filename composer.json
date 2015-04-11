@@ -1,0 +1,26 @@
+{
+    "name": "kevbaldwyn/newrelic-api",
+    "description": "A simple php wrapper for new relics api",
+    "tags" : ["new relic", "newrelic", "api"],
+
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "mockery/mockery":"dev-master"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "KevBaldwyn\\NewRelicApi":"src/",
+            "KevBaldwyn\\Tests\\NewRelicApi":"tests/"
+        },
+        "classmap": [
+            "src",
+            "tests"
+        ]
+    }
+}
