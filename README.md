@@ -46,5 +46,5 @@ The call method returns an instance of `GuzzleHttp\Message\Response` so that can
 
 Other calls can be made by manually building a request using `buildRequest` and then calling it ie:
 
-    $req = $api->buildRequest();
+    $req = $api->buildRequest($endpoint, $method, $data);
     $api->call($req);
