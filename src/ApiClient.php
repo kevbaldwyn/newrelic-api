@@ -71,7 +71,7 @@ class ApiClient {
             'deployment[user]' => $user,
             'deployment[revision]' => $revision,
         );
-        return $this->buildRequest(self::API_URL . 'deployments.xml', 'post', $data);
+        return $this->buildRequest(self::API_URL . '/deployments.xml', 'post', $data);
     }
 
     public function buildRequest($url, $method = 'get', array $data = array())
